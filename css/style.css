@@ -1,5 +1,6 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #e1e1fd;
 }    
 
 header{
@@ -7,8 +8,9 @@ header{
 }
 
 nav{
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
 }
 
 .link{
@@ -19,7 +21,7 @@ nav{
 
 h1{
     color: white;
-    text-shadow: #e1e1fd;
+    text-shadow: 6px, 3px, #e1e1fd;
     background-color: #5c496d;
     font-size: xx-large;
     font-weight: bold;
@@ -27,19 +29,21 @@ h1{
     
 }
 
-main {
-    background-color: #e1e1fd;
-}
-
 #bio{
     text-justify: distribute;
     overflow: hidden;
     padding: 10px;
     font-size: medium;
+    float: left;
+    width: 50%;
+    padding-top: 5%;
+    font-size: large;
+    
 }
 
 #coder{
-    width: 200px;
+    width: 400px;
+    float: right;
 }
 
 footer{
@@ -48,10 +52,14 @@ footer{
     color: white;
     font-weight: bold;
     background-color: #5c496d;
+    position: absolute ;
+    bottom: 0;
+    width: 97.4%;
 
 }
 
 #copy{
     text-align: right;
     font-size: small;
+    padding-right: 20px;
 }
