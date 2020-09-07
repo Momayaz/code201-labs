@@ -115,7 +115,7 @@ function game(){
 
 }
 
-alert('Thank you for playing ' + userName + '! This page is about me if you are interested in learning more.')
+alert('Thank you for your time ' + userName + '! This page is about me if you are interested in learning more.')
 
 
 
