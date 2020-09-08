@@ -23,7 +23,7 @@ function change(){
 }
 
 function game(){
-    var intro = confirm('This game is made up of 5 yes or no questions.');
+    var intro = confirm('This game is made up of 5 questions. Please answer with yes/no or y/n.');
     var q1 , q2 , q3 , q4 , q5 ;
 
 
