@@ -29,18 +29,18 @@ function game(){
 
     q1 = prompt('My biggest fear is snakes.').toLowerCase();
     
-    while (q1 !== 'yes' && q1 !== 'no') {
+    while (q1 !== 'yes' && q1 !== 'no' && q1 !== 'y' && q1 !=='n') {
         q1= prompt('My biggest fear is snakes.').toLowerCase();
     }
 
     switch (q1){
 
-        case 'yes':
+        case 'yes' || 'y':
             // console.log('I feel like this was an easy one, but GOOD JOB you are right!');
             alert('I feel like this was an easy one, but GOOD JOB you are right!');
             break;
 
-        case 'no':
+        case 'no' || 'n':
             // console.log('I tried to help you with an easy question, but unfortunately your answer is wrong');
             alert('I tried to help you with an easy question, but unfortunately your answer is wrong');
             break;
@@ -57,11 +57,11 @@ function game(){
 
    q2 = prompt('I love being on boats.').toLowerCase();
 
-    while (q2 !== 'yes' && q2 !== 'no') {
+    while (q2 !== 'yes' && q2 !== 'no' && q2 !== 'y' && q2 !=='n') {
         q2 = prompt('I love being on boats.').toLowerCase();
     }
 
-    if (q2 === 'yes') {
+    if (q2 === 'yes' || q2 === 'y') {
         // console.log('This is very untrue, I am very afraid of open water.');       
         alert('This is very untrue, I am very afraid of open water.');       
    } else {
@@ -72,17 +72,17 @@ function game(){
  
     q3 = prompt('True or false: My favorite color is green.').toLowerCase();
 
-    while (q3 !== 'yes' && q3 !== 'no') {
+    while (q3 !== 'yes' && q3 !== 'no' && q3 !== 'y' && q3 !=='n') {
         q3 = prompt('My favorite color is green.').toLowerCase();
     } 
     switch (q3){
 
-        case 'yes':
+        case 'yes' || 'y':
             // console.log('You are right I love green, I think it is such an energetic color.');
             alert('You are right I love green, I think it is such an energetic color.');
         break;
 
-        case 'no':
+        case 'no' || 'n':
             // console.log('I mean technically you are not completely wrong because I like all the colors, well, except orange.');
             alert('I mean technically you are not completely wrong because I like all the colors, well, except orange.');
         break;
@@ -98,11 +98,11 @@ function game(){
 
     q4 = prompt('I got my first job at 16.').toLowerCase();
 
-    while (q4 !== 'yes' && q4 !== 'no') {
+    while (q4 !== 'yes' && q4 !== 'no' && q4 !== 'y' && q4 !=='n') {
         q4  = prompt('I got my first job at 16.').toLowerCase();
     } 
 
-    if (q4 === 'yes') {
+    if (q4 === 'yes' || q4 === 'y') {
         // console.log('I know this is not very common but it is TRUE.');       
         alert('I know this is not very common but it is TRUE.');       
    } else {
@@ -113,11 +113,11 @@ function game(){
 
    q5 = prompt('Pizza is my favorite food.').toLowerCase();
 
-   while (q5 !== 'yes' && q5 !== 'no') {
+   while (q5 !== 'yes' && q5 !== 'no' && q5 !== 'y' && q5 !=='n') {
     q5  = prompt('True or false: Pizza is my favorite food.').toLowerCase();
     } 
 
-    if (q5 === 'yes') {
+    if (q5 === 'yes' || q5 === 'y') {
         // console.log('This was actually a trick question, because how can you just have ONE favorite food?');
         alert('This was actually a trick question, because how can you just have ONE favorite food?');       
    } else {
