@@ -19,6 +19,11 @@ nav{
     padding: 20px;
 }
 
+a{
+    text-decoration: none;
+    color: #5c496d;
+}
+
 h1{
     color: white;
     text-shadow: 6px, 3px, #e1e1fd;
@@ -31,20 +36,42 @@ h1{
 
 #bio{
     text-justify: distribute;
-    overflow: hidden;
     padding: 10px;
-    font-size: medium;
-    float: left;
-    width: 50%;
-    padding-top: 5%;
     font-size: large;
+    float: right;
+    width: 65%;
     
 }
 
-#coder{
-    width: 400px;
+#ex-ed{
+    width: 60%;
+    padding-left: 10px;
+    float: right;
+    line-break: normal;
+}
+
+.exp{
+    list-style: square;
+}
+
+#facts {
+    width: 60%;
+    padding-left: 10px;    
     float: right;
 }
+
+.ten-facts{
+    list-style: lower-roman;
+}
+
+#pic{
+    float: left;
+}
+
+#coder{
+    width: 500px;
+}
+
 
 footer{
     padding: 20px;
