@@ -5,6 +5,7 @@ console.log(userName);
 
 var play = confirm('Welcome to my site ' + userName + ', we are now going to play a game so you get to know me. Okay?');
 
+
 if (play === false){
     change();
 } else{
@@ -22,24 +23,24 @@ function change(){
 }
 
 function game(){
-    var intro = confirm('This game is made up of 5 true or false questions.');
+    var intro = confirm('This game is made up of 5 yes or no questions.');
     var q1 , q2 , q3 , q4 , q5 ;
 
 
-    q1 = prompt('True or false: My biggest fear is snakes.').toLowerCase();
+    q1 = prompt('My biggest fear is snakes.').toLowerCase();
     
-    while (q1 !== 'true' && q1 !== 'false') {
-        q1= prompt('True or false: My biggest fear is snakes.');;
+    while (q1 !== 'yes' && q1 !== 'no') {
+        q1= prompt('My biggest fear is snakes.').toLowerCase();
     }
 
     switch (q1){
 
-        case 'true':
+        case 'yes':
             // console.log('I feel like this was an easy one, but GOOD JOB you are right!');
             alert('I feel like this was an easy one, but GOOD JOB you are right!');
             break;
 
-        case 'false':
+        case 'no':
             // console.log('I tried to help you with an easy question, but unfortunately your answer is wrong');
             alert('I tried to help you with an easy question, but unfortunately your answer is wrong');
             break;
@@ -54,13 +55,13 @@ function game(){
 
 
 
-   q2 = prompt('True or false: I love being on boats.').toLowerCase();
+   q2 = prompt('I love being on boats.').toLowerCase();
 
-    while (q2 !== 'true' && q2 !== 'false') {
-        q2 = prompt('True or false: I love being on boats.');
+    while (q2 !== 'yes' && q2 !== 'no') {
+        q2 = prompt('I love being on boats.').toLowerCase();
     }
 
-    if (q2 === 'true') {
+    if (q2 === 'yes') {
         // console.log('This is very untrue, I am very afraid of open water.');       
         alert('This is very untrue, I am very afraid of open water.');       
    } else {
@@ -71,17 +72,17 @@ function game(){
  
     q3 = prompt('True or false: My favorite color is green.').toLowerCase();
 
-    while (q3 !== 'true' && q3 !== 'false') {
-        q3 = prompt('True or false: My favorite color is green.');
+    while (q3 !== 'yes' && q3 !== 'no') {
+        q3 = prompt('My favorite color is green.').toLowerCase();
     } 
     switch (q3){
 
-        case 'true':
+        case 'yes':
             // console.log('You are right I love green, I think it is such an energetic color.');
             alert('You are right I love green, I think it is such an energetic color.');
         break;
 
-        case 'false':
+        case 'no':
             // console.log('I mean technically you are not completely wrong because I like all the colors, well, except orange.');
             alert('I mean technically you are not completely wrong because I like all the colors, well, except orange.');
         break;
@@ -95,13 +96,13 @@ function game(){
     }
 
 
-    q4 = prompt('True or false: I got my first job at 16.').toLowerCase();
+    q4 = prompt('I got my first job at 16.').toLowerCase();
 
-    while (q4 !== 'true' && q4 !== 'false') {
-        q4  = prompt('True or false: I got my first job at 16.');
+    while (q4 !== 'yes' && q4 !== 'no') {
+        q4  = prompt('I got my first job at 16.').toLowerCase();
     } 
 
-    if (q4 === 'true') {
+    if (q4 === 'yes') {
         // console.log('I know this is not very common but it is TRUE.');       
         alert('I know this is not very common but it is TRUE.');       
    } else {
@@ -110,13 +111,13 @@ function game(){
    }
 
 
-   q5 = prompt('True or false: Pizza is my favorite food.').toLowerCase();
+   q5 = prompt('Pizza is my favorite food.').toLowerCase();
 
-   while (q5 !== 'true' && q5 !== 'false') {
-    q5  = prompt('True or false: Pizza is my favorite food.');
+   while (q5 !== 'yes' && q5 !== 'no') {
+    q5  = prompt('True or false: Pizza is my favorite food.').toLowerCase();
     } 
 
-    if (q5 === 'true') {
+    if (q5 === 'yes') {
         // console.log('This was actually a trick question, because how can you just have ONE favorite food?');
         alert('This was actually a trick question, because how can you just have ONE favorite food?');       
    } else {
