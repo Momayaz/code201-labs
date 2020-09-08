@@ -35,12 +35,12 @@ function game(){
 
     switch (q1){
 
-        case 'yes' || 'y':
+        case 'yes': case 'y':
             // console.log('I feel like this was an easy one, but GOOD JOB you are right!');
             alert('I feel like this was an easy one, but GOOD JOB you are right!');
             break;
 
-        case 'no' || 'n':
+        case 'no': case 'n':
             // console.log('I tried to help you with an easy question, but unfortunately your answer is wrong');
             alert('I tried to help you with an easy question, but unfortunately your answer is wrong');
             break;
@@ -70,19 +70,19 @@ function game(){
    }
 
  
-    q3 = prompt('True or false: My favorite color is green.').toLowerCase();
+    q3 = prompt('My favorite color is green.').toLowerCase();
 
     while (q3 !== 'yes' && q3 !== 'no' && q3 !== 'y' && q3 !=='n') {
         q3 = prompt('My favorite color is green.').toLowerCase();
     } 
     switch (q3){
 
-        case 'yes' || 'y':
+         case 'yes': case 'y':
             // console.log('You are right I love green, I think it is such an energetic color.');
             alert('You are right I love green, I think it is such an energetic color.');
         break;
 
-        case 'no' || 'n':
+       case 'no': case 'n':
             // console.log('I mean technically you are not completely wrong because I like all the colors, well, except orange.');
             alert('I mean technically you are not completely wrong because I like all the colors, well, except orange.');
         break;
