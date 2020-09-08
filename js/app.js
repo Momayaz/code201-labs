@@ -16,7 +16,7 @@ if (play === false){
     }
 
 } else{
-    var intro = alert('This game is made up of 5 questions. Please answer with yes/no or y/n.');
+    var intro = alert('This game is made up of 7 questions: 5 yes/no or y/n and 2 very short answer.');
 	var q1 , q2 , q3 , q4 , q5 , q6 , q7;
 	var x = 0;
 
