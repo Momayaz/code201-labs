@@ -168,37 +168,22 @@ if (play === false) {
 
     var pets = new Array('bird', 'dog', 'fish');
     var check;
-    var m, n;
     //console.log(pets.indexOf(q7))
 
-    for (m = 0; m < pets.length; m++) {
-        if (q7 === pets[m]) {
-            //console.log('You are correct! I actually had 3 pets: ' + pets.toString() + '.');
-            alert('You are correct! I actually had 3 pets: ' + pets.toString() + '.');
-			console.log(x++);
-            check = 'true'
-            break;
+   for (var j = 5; j > 0; j--) {
+         if (pets.indexOf(q7) === -1) {
+            q7 = prompt('Try again. What pets did I have?');
         } else {
-            check = 'false';
+            alert('Yes that is true! I actually had 3 pets: ' + pets.toString() + '.');
+            console.log(x++);
+            break;
         }
-    } console.log(check);
-
-    if (check === 'false') {
-
-        for (var j = 5; j > 0; j--) {
-            if (pets.indexOf(q7) === -1) {
-                q7 = prompt('Try again. What pets did I have?');
-            } else {
-                alert('Yes that is true! I actually had 3 pets: ' + pets.toString() + '.');
-                console.log(x++);
-                break;
-            }
-            if (j === 1 && pets.indexOf(q7) === -1) {
-                //console.log('It is totally fine that you didn\'t guess the right answers, but so you know, I had 3 different kinds of pets growing up: ' + pets.toString() + '.');
-                alert('It is totally fine that you didn\'t guess the right answers, but so you know, I had 3 different kinds of pets growing up: ' + pets.toString() + '.');
-            }
+        if (j === 1 && pets.indexOf(q7) === -1) {
+            //console.log('It is totally fine that you didn\'t guess the right answers, but so you know, I had 3 different kinds of pets growing up: ' + pets.toString() + '.');
+            alert('It is totally fine that you didn\'t guess the right answers, but so you know, I had 3 different kinds of pets growing up: ' + pets.toString() + '.');
         }
     }
+
 
     console.log(x);
 
