@@ -20,7 +20,7 @@ if (play === false) {
     var q1, q2, q3, q4, q5, q6, q7;
     var x = 0;
 
-    /*q1 = prompt('My biggest fear is snakes.').toLowerCase();
+    q1 = prompt('My biggest fear is snakes.').toLowerCase();
     
     while (q1 !== 'yes' && q1 !== 'no' && q1 !== 'y' && q1 !=='n') {
 		q1= prompt('My biggest fear is snakes.').toLowerCase();
@@ -32,7 +32,7 @@ if (play === false) {
 		case 'yes': case 'y':
 			// console.log('I feel like this was an easy one, but GOOD JOB you are right!');
             alert('I feel like this was an easy one, but GOOD JOB you are right!');
-			console.log(x=x+1);
+			console.log(x++);
 		break;
 
         case 'no': case 'n':
@@ -62,7 +62,7 @@ if (play === false) {
    } else {
         // console.log('You are for sure right!');
 		alert('You are for sure right!');
-		console.log(x=x+1);
+        console.log(x++);
 	}
 	console.log(x);
 
@@ -79,7 +79,7 @@ if (play === false) {
          case 'yes': case 'y':
             // console.log('You are right I love green, I think it is such an energetic color.');
 			alert('You are right I love green, I think it is such an energetic color.');
-			console.log(x=x+1);
+			console.log(x++);
 			break;
 
        case 'no': case 'n':
@@ -105,7 +105,7 @@ if (play === false) {
     if (q4 === 'yes' || q4 === 'y') {
         // console.log('You are correct.');
 		alert('You are correct.');
-		console.log(x=x+1);
+        console.log(x++);
     } else {
         // console.log('I know this is not very common but it is TRUE.');       
 		alert('I know this is not very common but it is TRUE.');   
@@ -126,22 +126,22 @@ if (play === false) {
    } else {
         // console.log('You are right! All food is my favorite food ;)');
 		alert('You are right! All food is my favorite food ;)');
-		console.log(x=x+1);
-   }
+        console.log(x++);
+    }
    console.log(x);
-*/
+
 
     q6 = prompt('How old do you think I am?');
     console.log(q6);
 
     if (Number(q6) === 24) {
         alert('You got it!');
-        console.log(x = x + 1);
+        console.log(x++);
     } else {
         for (var i = 3; i > 0; i--) {
             if (Number(q6) === 24) {
                 alert('Yes that is it!')
-                console.log(x = x + 1);
+                console.log(x++);
                 break;
             } else if (q6 === ' ' || q6 === null || isNaN(Number(q6))){
                 q6 = prompt('Try again, this time try only numbers please. How old do you think I am?');
@@ -175,7 +175,7 @@ if (play === false) {
         if (q7 === pets[m]) {
             //console.log('You are correct! I actually had 3 pets: ' + pets.toString() + '.');
             alert('You are correct! I actually had 3 pets: ' + pets.toString() + '.');
-            console.log(x = x + 1);
+			console.log(x++);
             check = 'true'
             break;
         } else {
@@ -190,7 +190,7 @@ if (play === false) {
                 q7 = prompt('Try again. What pets did I have?');
             } else {
                 alert('Yes that is true! I actually had 3 pets: ' + pets.toString() + '.');
-                console.log(x = x + 1);
+                console.log(x++);
                 break;
             }
             if (j === 1 && pets.indexOf(q7) === -1) {
