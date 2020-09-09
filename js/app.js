@@ -6,21 +6,21 @@ console.log(userName);
 var play = confirm('Welcome to my site ' + userName + ', we are now going to play a game so you get to know me. Okay?');
 
 
-if (play === false){
+if (play === false) {
 
     var check = confirm('Are you sure you do not want to play? Click OK to play and Cancel to exit');
-    if (check === true){
+    if (check === true) {
         game();
-    } else{
+    } else {
         console.log(userName + ' did not want to play.');
     }
 
-} else{
+} else {
     var intro = alert('This game is made up of 7 questions: 5 yes/no or y/n and 2 very short answer.');
-	var q1 , q2 , q3 , q4 , q5 , q6 , q7;
-	var x = 0;
+    var q1, q2, q3, q4, q5, q6, q7;
+    var x = 0;
 
-    q1 = prompt('My biggest fear is snakes.').toLowerCase();
+    /*q1 = prompt('My biggest fear is snakes.').toLowerCase();
     
     while (q1 !== 'yes' && q1 !== 'no' && q1 !== 'y' && q1 !=='n') {
 		q1= prompt('My biggest fear is snakes.').toLowerCase();
@@ -129,91 +129,95 @@ if (play === false){
 		console.log(x=x+1);
    }
    console.log(x);
+*/
 
-
-   q6 = prompt('How old do you think I am?');
+    q6 = prompt('How old do you think I am?');
     console.log(q6);
-   if(Number(q6)=== 24){
-		alert('You got it!');
-		console.log(x=x+1);
-   }else{
-        for (var i = 3 ; i > 0 ; i--){
-            if (Number(q6)=== 24){ 
-				alert ('Yes that is it!')
-				console.log(x=x+1);
-                break; 
-            } else if (Number(q6) > 24){
-                alert ('Too high!');
+
+    if (Number(q6) === 24) {
+        alert('You got it!');
+        console.log(x = x + 1);
+    } else {
+        for (var i = 3; i > 0; i--) {
+            if (Number(q6) === 24) {
+                alert('Yes that is it!')
+                console.log(x = x + 1);
+                break;
+            } else if (q6 === ' ' || q6 === null || isNaN(Number(q6))){
+                q6 = prompt('Try again, this time try only numbers please. How old do you think I am?');
+            }else if (Number(q6) > 24) {
+                alert('Too high!');
                 q6 = prompt('Try again, how old do you think I am?');
             } else if (Number(q6) < 24) {
-                alert ('Too low.');
+                alert('Too low.');
                 q6 = prompt('Try again, how old do you think I am?');
-            }
-            if ( i === 1 && Number(q6) !== 24){
+            } 
+            if (i === 1 && Number(q6) !== 24) {
                 alert('It\'s okay that you didn\'t guess, I am 24');
             }
         }
     }
-	console.log(x);
+    console.log(x);
 
 
-	q7 = prompt ('What kinds of pets did I have growing up?').toLowerCase();
-	while (q7 === ' ' ||  q7 === null || !isNaN(q7)) {
-		q7 = prompt ('What kinds of pets did I have growing up?').toLowerCase();
-	} 
-	console.log(q7.toLowerCase());
+    q7 = prompt('What kinds of pets did I have growing up?').toLowerCase();
+    while (q7 === ' ' || q7 === null || !isNaN(q7)) {
+        q7 = prompt('What kinds of pets did I have growing up?').toLowerCase();
+    }
+    console.log(q7.toLowerCase());
 
-   	var pets = new Array ('bird' , 'dog' , 'fish');
+    var pets = new Array('bird', 'dog', 'fish');
     var check;
-	var m , n;
-	//console.log(pets.indexOf(q7))
+    var m, n;
+    //console.log(pets.indexOf(q7))
 
-    for(m = 0 ; m < pets.length ; m++) {
-        if(q7 === pets[m]){
-			//console.log('You are correct! I actually had 3 pets: ' + pets.toString() + '.');
-			alert('You are correct! I actually had 3 pets: ' + pets.toString() + '.');
-			console.log(x=x+1);
+    for (m = 0; m < pets.length; m++) {
+        if (q7 === pets[m]) {
+            //console.log('You are correct! I actually had 3 pets: ' + pets.toString() + '.');
+            alert('You are correct! I actually had 3 pets: ' + pets.toString() + '.');
+            console.log(x = x + 1);
+            check = 'true'
             break;
         } else {
             check = 'false';
-        }       
-    }  console.log(check);
-   
-   if( check !== 'true' ) {
-
-        for (var j = 5 ; j > 0 ; j--){ 
-			if(pets.indexOf(q7) === -1){
-				q7 = prompt ('Try again. What pets did I have?');
-			} else {
-				alert('Yes that is true! I actually had 3 pets: ' + pets.toString() + '.');
-				console.log(x=x+1);
-				break;
-			} 
-			if (j === 1 && pets.indexOf(q7) === -1 ){
-				//console.log('It is totally fine that you didn\'t guess the right answers, but so you know, I had 3 different kinds of pets growing up: ' + pets.toString() + '.');
-				alert('It is totally fine that you didn\'t guess the right answers, but so you know, I had 3 different kinds of pets growing up: ' + pets.toString() + '.');
-			}
         }
-	}
+    } console.log(check);
 
-	console.log(x);
-	
-	var total = x;
-	console.log(total);
+    if (check === 'false') {
 
-	if (total == 0) {
-		alert('It takes someone who really knows me to get every question wrong ;)');
-	} else if (total > 0 && total < 4){
-		alert('I guess this means we need to get to know each other more. Your score is ' + total + ' out of 7.');
-	} else if (total > 3 && total < 7){
-		alert('You did great! Your score is ' + total + ' out of 7.');
-	} else if (total == 7){
-		alert('Congrats! You got all the questions right.');
-	}
+        for (var j = 5; j > 0; j--) {
+            if (pets.indexOf(q7) === -1) {
+                q7 = prompt('Try again. What pets did I have?');
+            } else {
+                alert('Yes that is true! I actually had 3 pets: ' + pets.toString() + '.');
+                console.log(x = x + 1);
+                break;
+            }
+            if (j === 1 && pets.indexOf(q7) === -1) {
+                //console.log('It is totally fine that you didn\'t guess the right answers, but so you know, I had 3 different kinds of pets growing up: ' + pets.toString() + '.');
+                alert('It is totally fine that you didn\'t guess the right answers, but so you know, I had 3 different kinds of pets growing up: ' + pets.toString() + '.');
+            }
+        }
+    }
+
+    console.log(x);
+
+    var total = x;
+    console.log(total);
+
+    if (total == 0) {
+        alert('It takes someone who really knows me to get every question wrong ;)');
+    } else if (total > 0 && total < 4) {
+        alert('I guess this means we need to get to know each other more. Your score is ' + total + ' out of 7.');
+    } else if (total > 3 && total < 7) {
+        alert('You did great! Your score is ' + total + ' out of 7.');
+    } else if (total == 7) {
+        alert('Congrats! You got all the questions right.');
+    }
 }
 
 alert('Thank you for your time ' + userName + '! This page is about me if you are interested in learning more.');
 
 
 
-    
+
